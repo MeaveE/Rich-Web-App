@@ -1,0 +1,72 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin:0px;
+}
+#head-1{
+	background-color: lightblue;
+	padding: 1%;
+	padding-top:0.5%;
+	padding-bottom: 0.5%;
+}
+
+
+.col::after{
+	content:"";
+	clear:both;
+	display: table;
+}
+[class*="row-"]{
+	padding: 15px;
+	border: 1px solid black;
+}
+#addbtn{
+	margin-left: 35%;
+	margin:1%;
+	float: left;
+}
+#savebtn{
+	display: inline-block;
+	float:none;
+}
+#color{
+	border-radius: 10px;
+	border:2px solid silver;
+	padding: 2px;
+}
+#notetext{
+	border-radius: 10px;
+	border:2px solid silver;
+	margin-left: 30%;
+}
+[class*="row-"#text]{
+	float: left;
+	display: block;
+}
+
+button{
+	display: inline-block;
+	float:right;
+	padding: 5px;
+	border-radius: 10px;
+	background-color:lightgreen;
+	border: 2px solid silver;
+}
+
+#[class*="row-"].red::after {
+  background-color: lightcoral;
+}
+
+#[class*="row-"].blue::after {
+  background-color: lightskyblue;
+}
+#[class*="row-"].green::after {
+  background-color: lightgreen;
+}
+#[class*="row-"].yellow::after {
+  background-color: gold;
+}
+#[class*="row-"].purple::after{
+	background-color: blueviolet;
+}

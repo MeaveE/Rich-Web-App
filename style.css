@@ -1,0 +1,13 @@
+h1{
+	margin: 4%;
+	padding: 2%;
+}
+
+div{
+	border: 1px solid black;
+}
+
+textarea{
+	margin:4%;
+	padding: 2%;
+}

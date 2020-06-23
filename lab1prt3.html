@@ -1,0 +1,39 @@
+<html>
+
+<link rel="stylesheet" href="Assets/Css/lab1prt3.css">
+
+<body>
+	<div id="head-1">
+		<H1>Note Taker</H1>
+	</div>
+
+	<button onclick="display()" id="addbtn">Hide</button>
+
+	<div class="col" id="col">
+
+		<div class="row-1" id="row-1">
+			<form>
+				<textarea id="notetext" rows="10" cols="50" required="true"></textarea> 
+				<select name="color" id="color">
+      			<option value="white">Select color</option>
+      			<option value="lightcoral" >Red</option>
+      			<option value="lightskyblue" >Blue</option>
+      			<option value="blueviolet" >Purple</option>
+      			<option value="gold" >Yellow</option>
+      			<option value="lightgreen" >Green</option>
+    			</select>
+				<button value="save" id="savebtn" onclick="addnote(event)">Save</button>
+			</form>
+		</div>
+
+		<div id="note">
+		</div>
+
+	</div>
+
+<script src="https://npmcdn.com/@reactivex/rxjs@5.0.0-beta.3/dist/global/Rx.umd.js"></script>
+<script type="text/javascript" src="Assets/Scripts/lab1prt3.js"></script>
+
+</body>
+</html>
+
